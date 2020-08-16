@@ -29,7 +29,7 @@ def get_english_meaning(emote_file, jpn_emote)
     if jpn_emote == value[:japanese]
       return eng_meaning
     end
-    binding.pry
+    #binding.pry
   end
 end
 
