@@ -26,7 +26,6 @@ def get_english_meaning(emote_file, jpn_emote)
   final_hash = load_library(emote_file)
   
   final_hash.each do |eng_meaning, value|
-    value.each do |val|
     end
     binding.pry
   end
