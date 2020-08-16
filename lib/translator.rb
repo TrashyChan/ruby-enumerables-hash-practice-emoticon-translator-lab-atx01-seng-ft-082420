@@ -26,6 +26,9 @@ def get_english_meaning(emote_file, jpn_emote)
   final_hash = load_library(emote_file)
   
   final_hash.each do |eng_meaning, value|
+    if jpn_emote == value[:japanese]
+      return eng_meaning
+    end
     binding.pry
   end
 end
