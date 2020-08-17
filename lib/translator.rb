@@ -45,4 +45,7 @@ def get_japanese_emoticon(emote_file, eng_emote)
       return jpn_emote
     end
   end
+  if eng_emote != final_hash
+    return "Sorry, that emoticon was not found"
+  end
 end
