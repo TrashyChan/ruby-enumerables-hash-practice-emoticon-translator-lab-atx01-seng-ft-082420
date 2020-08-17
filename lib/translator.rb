@@ -41,7 +41,7 @@ def get_japanese_emoticon(emote_file, eng_emote)
   
   final_hash.each do |meaning, value|
     jpn_emote = value[:japanese]
-    if jpn_emote == value[:english]
+    if jpn_emote == eng_emote
       return jpn_emote
     end
   end
