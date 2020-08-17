@@ -40,5 +40,5 @@ def get_japanese_emoticon(emote_file, meaning)
   final_hash = load_library(emote_file)
   
   final_hash.each do |meaning, value|
-end
+  end
 end
