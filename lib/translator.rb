@@ -28,8 +28,7 @@ def get_english_meaning(emote_file, jpn_emote)
   final_hash.each do |eng_meaning, value|
     if jpn_emote == value[:japanese]
       return eng_meaning
-    elsif not(true)
-      return "Sorry, that emoticon was not found"
+    else return "Sorry, that emoticon was not found"
     end 
   end
 end
