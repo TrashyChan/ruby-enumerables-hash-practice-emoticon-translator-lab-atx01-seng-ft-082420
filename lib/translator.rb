@@ -26,7 +26,9 @@ def get_english_meaning(emote_file, jpn_emote)
   final_hash = load_library(emote_file)
   
   final_hash.each do |eng_meaning, value|
-    jpn_emote == value[:japanese] ? eng_meaning : "Sorry, that emoticon was not found"
+    if jpn_emote == value[:japanese]
+      return eng_meaning
+    elsif jpn_emote == value[:japanese] ? eng_meaning :"Sorry, that emoticon was not found"
     end 
   end
 end
