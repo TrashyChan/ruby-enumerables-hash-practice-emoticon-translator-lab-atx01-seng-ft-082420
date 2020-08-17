@@ -39,7 +39,7 @@ end
 def get_japanese_emoticon(emote_file, meaning)
   final_hash = load_library(emote_file)
   
-  final_hash.each do |eng_meaning, value|
+  final_hash.each do |meaning, value|
     
   end
   binding.pry
