@@ -38,4 +38,6 @@ end
 
 def get_japanese_emoticon(emote_file, meaning)
   final_hash = load_library(emote_file)
+  
+  
 end
