@@ -40,7 +40,7 @@ def get_japanese_emoticon(emote_file, eng_emote)
   final_hash = load_library(emote_file)
   
   final_hash.each do |meaning, value|
-    jpn_emote = value[:japnese]
+    jpn_emote = value[:japanese]
     binding.pry
     if  eng_emote == value[:japanese]
       return value
