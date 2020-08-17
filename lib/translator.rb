@@ -29,6 +29,9 @@ def get_english_meaning(emote_file, jpn_emote)
     if jpn_emote == value[:japanese]
       return eng_meaning
     end
+    if eng_meaning ? eng_meaning
+      return "Sorry, that emoticon was not found"
+    end
   end
 end
 
